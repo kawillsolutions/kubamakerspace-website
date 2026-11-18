@@ -2,19 +2,28 @@
   --brand-teal: #1aa89d;
   --brand-blue: #28ace2;
   --brand-orange: #f99d1b;
+  --brand-orange-light: #ffc45d;
+  --brand-orange-deep: #ed7f0a;
+  --brand-orange-teal: #e39e28;
   --brand-ink: #15373a;
-  --accent-color: var(--brand-teal);
-  --nav-hover-color: var(--brand-blue);
-  --nav-dropdown-hover-color: var(--brand-blue);
+  --accent-color: var(--brand-orange);
+  --nav-hover-color: var(--brand-orange);
+  --nav-dropdown-hover-color: var(--brand-orange);
 }
 
 .index-page .header .cta-btn,
 .index-page .header .cta-btn:focus {
-  background: var(--brand-teal);
+  background: linear-gradient(135deg, var(--brand-orange-deep), var(--brand-orange-light));
   border: 0;
   border-radius: 999px;
   color: var(--brand-ink);
   font-weight: 700;
+  box-shadow: 0 8px 20px rgba(237, 127, 10, 0.22);
+}
+
+.index-page .header .cta-btn:not(:disabled):hover {
+  background: linear-gradient(135deg, var(--brand-orange), var(--brand-orange-light));
+  color: var(--brand-ink);
 }
 
 .index-page .header .cta-btn:disabled {
@@ -22,11 +31,14 @@
 }
 
 .index-page .hero .hero-eyebrow {
-  color: var(--brand-blue);
+  background: linear-gradient(90deg, var(--brand-orange-deep), var(--brand-orange-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .index-page .hero .hero-eyebrow::after {
-  background: var(--brand-orange);
+  background: linear-gradient(90deg, var(--brand-orange-deep), var(--brand-orange-light));
   content: "";
   display: block;
   height: 3px;
@@ -34,40 +46,81 @@
   width: 44px;
 }
 
+.index-page .services {
+  background:
+    linear-gradient(120deg, #f99d1b 0%, #ffc45d 38%, #fff3df 76%, var(--brand-orange-teal) 100%);
+}
+
+.index-page .services .service-item {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(255, 250, 239, 0.94));
+}
+
 .index-page .services .row > div:nth-child(3n + 1) .service-item .icon {
-  background: var(--brand-teal);
+  background: linear-gradient(135deg, var(--brand-orange-deep), var(--brand-orange-light));
   color: var(--brand-ink);
 }
 
 .index-page .services .row > div:nth-child(3n + 2) .service-item .icon {
-  background: var(--brand-blue);
+  background: linear-gradient(135deg, #147b73, var(--brand-teal));
   color: var(--brand-ink);
 }
 
 .index-page .services .row > div:nth-child(3n) .service-item .icon {
-  background: var(--brand-orange);
+  background: linear-gradient(135deg, #126f93, var(--brand-blue));
   color: var(--brand-ink);
+}
+
+.index-page .services .service-item {
+  border-top: 3px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-page .services .row > div:nth-child(3n + 1) .service-item {
+  border-top-color: var(--brand-orange);
+}
+
+.index-page .services .row > div:nth-child(3n + 2) .service-item {
+  border-top-color: var(--brand-teal);
+}
+
+.index-page .services .row > div:nth-child(3n) .service-item {
+  border-top-color: var(--brand-blue);
 }
 
 .index-page .call-to-action .cta-btn,
 .index-page .call-to-action .cta-btn:focus {
-  background: var(--brand-orange);
+  background: linear-gradient(135deg, var(--brand-orange-deep), var(--brand-orange-light));
   border-radius: 999px;
   color: var(--brand-ink);
   font-weight: 700;
+  box-shadow: 0 10px 24px rgba(237, 127, 10, 0.24);
+}
+
+.index-page .call-to-action h3,
+.index-page .call-to-action p {
+  color: #ffffff;
 }
 
 .index-page .call-to-action .cta-btn:hover {
-  background: #ffb648;
+  background: linear-gradient(135deg, var(--brand-orange), var(--brand-orange-light));
   color: var(--brand-ink);
 }
 
+.index-page .features {
+  background:
+    linear-gradient(120deg, #ffe1ad 0%, #ffc45d 34%, #fff4e1 76%, rgba(26, 168, 157, 0.2) 100%);
+}
+
 .index-page .features .features-item > i {
-  color: var(--brand-teal);
+  background: linear-gradient(135deg, var(--brand-orange-deep), var(--brand-orange-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .index-page .stats .subheading h3::after {
-  background: var(--brand-orange);
+  background: linear-gradient(90deg, var(--brand-orange-deep), var(--brand-orange-light));
   content: "";
   display: block;
   height: 3px;
@@ -76,20 +129,53 @@
 }
 
 .index-page .stats .row > div:nth-child(3n + 1) .stats-item span {
-  color: var(--brand-orange);
+  background: linear-gradient(135deg, var(--brand-orange-deep), var(--brand-orange-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .index-page .stats .row > div:nth-child(3n + 2) .stats-item span {
-  color: var(--brand-blue);
+  color: var(--brand-orange-teal);
 }
 
 .index-page .stats .row > div:nth-child(3n) .stats-item span {
-  color: var(--brand-teal);
+  color: var(--brand-orange);
+}
+
+.index-page .contact {
+  background:
+    linear-gradient(120deg, #ffd998 0%, #fff0d7 45%, #fffaf1 82%, rgba(26, 168, 157, 0.18) 100%);
+}
+
+.index-page .contact .info-item {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(249, 157, 27, 0.12);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.index-page .contact .info-item i {
+  background: linear-gradient(135deg, var(--brand-orange-deep), var(--brand-orange-light));
+  color: var(--brand-ink);
+}
+
+.index-page .contact .php-email-form {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 250, 239, 0.92));
+  border: 1px solid rgba(249, 157, 27, 0.14);
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(21, 55, 58, 0.08);
+  padding: 24px;
 }
 
 .index-page .contact .php-email-form button[type="submit"] {
+  background: linear-gradient(135deg, var(--brand-orange-deep), var(--brand-orange-light));
+  border: 0;
+  border-radius: 999px;
   color: var(--brand-ink);
   font-weight: 700;
+  box-shadow: 0 8px 20px rgba(237, 127, 10, 0.18);
 }
 
 .index-page .scroll-top i {
@@ -139,7 +225,7 @@
 .index-page .navmenu a:hover,
 .index-page .navmenu .active,
 .index-page .navmenu .active:focus {
-  color: var(--brand-teal);
+  color: var(--brand-orange);
 }
 
 .index-page.scrolled .header > .container {
@@ -150,12 +236,13 @@
 .index-page .footer {
   --default-color: var(--brand-ink);
   --heading-color: var(--brand-ink);
-  --accent-color: var(--brand-teal);
+  --accent-color: var(--brand-orange);
   --contrast-color: #ffffff;
-  background: linear-gradient(180deg, rgba(225, 243, 241, 0.78), rgba(240, 247, 247, 0.94));
+  background:
+    linear-gradient(120deg, rgba(255, 225, 173, 0.94), rgba(255, 244, 225, 0.96) 68%, rgba(26, 168, 157, 0.16) 100%);
   -webkit-backdrop-filter: saturate(155%) blur(24px);
   backdrop-filter: saturate(155%) blur(24px);
-  border-top: 1px solid rgba(26, 168, 157, 0.14);
+  border-top: 1px solid rgba(249, 157, 27, 0.22);
   padding: 28px 0;
 }
 
@@ -203,14 +290,14 @@
 
 .index-page .footer .social-links a {
   background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(26, 168, 157, 0.2);
+  border: 1px solid rgba(249, 157, 27, 0.28);
   box-shadow: 0 4px 14px rgba(21, 55, 58, 0.06);
   color: var(--brand-ink);
 }
 
 .index-page .footer .social-links a:hover {
-  background: var(--brand-teal);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--brand-orange-deep), var(--brand-orange-light));
+  color: var(--brand-ink);
 }
 
 .index-page .footer > .container > .container {

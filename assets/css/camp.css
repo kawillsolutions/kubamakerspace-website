@@ -7,14 +7,19 @@
   --camp-blue-ink: #126f93;
   --camp-lime: #d7f1ed;
   --camp-yellow: #f99d1b;
+  --camp-orange-light: #ffc45d;
+  --camp-orange-deep: #ed7f0a;
+  --camp-orange-teal: #e39e28;
+  --camp-gradient-primary: linear-gradient(120deg, #f99d1b 0%, #ffc45d 38%, #fff3df 76%, var(--camp-orange-teal) 100%);
+  --camp-gradient-soft: linear-gradient(120deg, #ffe1ad 0%, #ffc45d 34%, #fff4e1 76%, rgba(26, 168, 157, 0.2) 100%);
   --camp-paper: #faf8f0;
   --camp-muted: #5d7172;
   --camp-line: #dce9e7;
-  --accent-color: var(--camp-green);
+  --accent-color: var(--camp-yellow);
   --nav-color: var(--camp-ink);
-  --nav-hover-color: var(--camp-green);
+  --nav-hover-color: var(--camp-yellow);
   --nav-dropdown-color: var(--camp-ink);
-  --nav-dropdown-hover-color: var(--camp-green);
+  --nav-dropdown-hover-color: var(--camp-yellow);
   --nav-dropdown-background-color: #fffef9;
   background: var(--camp-paper);
   color: var(--camp-ink);
@@ -46,17 +51,18 @@
 .camp-page .navmenu a:hover,
 .camp-page .navmenu .active,
 .camp-page .navmenu .active:focus {
-  color: var(--camp-green);
+  color: var(--camp-yellow);
 }
 
 .camp-page .header .cta-btn,
 .camp-page .header .cta-btn:focus {
-  background: var(--camp-forest);
+  background: linear-gradient(135deg, var(--camp-orange-deep), var(--camp-orange-light));
   border: 0;
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--camp-ink);
   font-weight: 600;
   padding: 10px 24px;
+  box-shadow: 0 8px 20px rgba(237, 127, 10, 0.18);
 }
 
 .camp-page .header .cta-btn:disabled {
@@ -69,7 +75,9 @@
 }
 
 .camp-hero {
-  background: var(--camp-paper);
+  background:
+    var(--camp-gradient-primary),
+    var(--camp-paper);
   min-height: 0;
   overflow: hidden;
   padding: 132px 0 76px;
@@ -125,12 +133,12 @@
 }
 
 .camp-hero h1 em {
-  color: var(--camp-green);
+  color: var(--camp-yellow);
   font-style: normal;
 }
 
 .camp-hero h1 span {
-  background: var(--camp-yellow);
+  background: linear-gradient(135deg, var(--camp-orange-deep), var(--camp-orange-light));
   border-radius: 0.13em;
   color: var(--camp-ink);
   display: inline-block;
@@ -139,7 +147,10 @@
 }
 
 .camp-hero .camp-tagline {
-  color: var(--camp-green);
+  background: linear-gradient(90deg, var(--camp-orange-deep), var(--camp-orange-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-family: var(--heading-font);
   font-size: clamp(21px, 2.2vw, 27px);
   font-weight: 700;
@@ -172,7 +183,7 @@
 }
 
 .camp-hero-details i {
-  color: var(--camp-green);
+  color: var(--camp-yellow);
   font-size: 17px;
 }
 
@@ -185,7 +196,7 @@
 
 .camp-whatsapp-button {
   align-items: center;
-  background: var(--camp-yellow);
+  background: linear-gradient(135deg, var(--camp-orange-deep), var(--camp-orange-light));
   border: 0;
   border-radius: 999px;
   box-shadow: 0 8px 18px rgba(249, 157, 27, 0.2);
@@ -201,7 +212,7 @@
 }
 
 .camp-whatsapp-button:hover {
-  background: #ffda7c;
+  background: linear-gradient(135deg, var(--camp-yellow), var(--camp-orange-light));
   box-shadow: 0 12px 24px rgba(249, 157, 27, 0.24);
   color: var(--camp-ink);
   transform: translateY(-2px);
@@ -327,8 +338,8 @@
 }
 
 .camp-proof-strip {
-  background: var(--camp-forest);
-  color: #ffffff;
+  background: var(--camp-gradient-primary);
+  color: var(--camp-ink);
   padding: 25px 0;
 }
 
@@ -341,7 +352,7 @@
 
 .camp-proof-grid > div {
   align-items: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(21, 55, 58, 0.2);
   display: flex;
   gap: 12px;
   min-height: 48px;
@@ -358,7 +369,7 @@
 }
 
 .camp-proof-grid strong {
-  color: var(--camp-lime);
+  color: var(--camp-ink);
   font-family: var(--heading-font);
   font-size: clamp(20px, 2.2vw, 27px);
   font-weight: 800;
@@ -367,18 +378,18 @@
 }
 
 .camp-proof-grid > div:nth-child(even) strong {
-  color: var(--camp-blue);
+  color: var(--camp-forest);
 }
 
 .camp-proof-grid span {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(21, 55, 58, 0.82);
   font-family: var(--nav-font);
   font-size: 11px;
   line-height: 1.45;
 }
 
 .camp-about {
-  background: #fffef9;
+  background: var(--camp-gradient-soft);
 }
 
 .camp-about .camp-section-kicker,
@@ -431,7 +442,10 @@
 }
 
 .camp-section-heading h2 em {
-  color: var(--camp-green);
+  background: linear-gradient(90deg, var(--camp-orange-deep), var(--camp-orange-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-style: normal;
 }
 
@@ -443,7 +457,7 @@
 }
 
 .camp-programmes {
-  background: var(--camp-paper);
+  background: var(--camp-gradient-primary);
 }
 
 .camp-program-card {
@@ -571,7 +585,7 @@
 }
 
 .camp-activities {
-  background: #f0eddf;
+  background: var(--camp-gradient-soft);
 }
 
 .camp-activities h2,
@@ -609,13 +623,13 @@
 }
 
 .camp-activity-list i {
-  color: var(--camp-green);
+  color: var(--camp-yellow);
   font-size: 18px;
 }
 
 .camp-journey {
-  background: var(--camp-forest);
-  color: #ffffff;
+  background: var(--camp-gradient-primary);
+  color: var(--camp-ink);
 }
 
 .camp-journey .section-title {
@@ -623,24 +637,24 @@
 }
 
 .camp-journey .section-title h2 {
-  color: #ffffff;
+  color: var(--camp-ink);
   font-size: clamp(38px, 5vw, 58px);
   font-weight: 800;
   letter-spacing: -0.07em;
 }
 
 .camp-journey .section-title > p:last-child {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(21, 55, 58, 0.82);
   max-width: 560px;
 }
 
 .camp-journey .camp-section-kicker {
-  color: var(--camp-lime);
+  color: var(--camp-ink);
 }
 
 .camp-week-card {
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(21, 55, 58, 0.18);
   border-radius: 16px;
   border-top: 0;
   height: 100%;
@@ -650,7 +664,7 @@
 }
 
 .camp-week-card > span {
-  color: var(--camp-lime);
+  color: var(--camp-ink);
   display: inline-block;
   font-family: var(--nav-font);
   font-size: 10px;
@@ -660,7 +674,7 @@
 }
 
 .camp-week-card h3 {
-  color: #ffffff;
+  color: var(--camp-ink);
   font-size: 25px;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -668,14 +682,14 @@
 }
 
 .camp-week-card p {
-  color: rgba(255, 255, 255, 0.74);
+  color: rgba(21, 55, 58, 0.82);
   font-size: 13px;
   line-height: 1.65;
   margin: 0;
 }
 
 .camp-schedule {
-  background: #fffef9;
+  background: var(--camp-gradient-soft);
 }
 
 .camp-schedule-table {
@@ -700,7 +714,7 @@
 }
 
 .camp-schedule-table th {
-  color: var(--camp-green);
+  color: var(--camp-orange-deep);
   font-family: var(--nav-font);
   font-size: 12px;
   font-weight: 700;
@@ -715,24 +729,25 @@
 }
 
 .camp-registration {
-  background: #f0eddf;
+  background: var(--camp-gradient-soft);
 }
 
 .camp-fee-card {
-  background: var(--camp-forest);
+  background:
+    linear-gradient(135deg, var(--camp-orange-deep), var(--camp-orange-light));
   border-radius: 20px;
   box-shadow: 0 20px 45px rgba(21, 55, 58, 0.14);
-  color: #ffffff;
+  color: var(--camp-ink);
   height: 100%;
   padding: 34px;
 }
 
 .camp-fee-card .camp-section-kicker {
-  color: var(--camp-lime);
+  color: var(--camp-ink);
 }
 
 .camp-fee-card h2 {
-  color: #ffffff;
+  color: var(--camp-ink);
   font-size: clamp(40px, 4.4vw, 56px);
   font-weight: 800;
   letter-spacing: -0.07em;
@@ -740,13 +755,13 @@
 }
 
 .camp-fee-card > p:not(.camp-section-kicker) {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(21, 55, 58, 0.78);
   font-size: 13px;
 }
 
 .camp-payment-plan {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(21, 55, 58, 0.18);
+  border-top: 1px solid rgba(21, 55, 58, 0.18);
   display: grid;
   gap: 8px 12px;
   grid-template-columns: 1fr auto;
@@ -755,13 +770,13 @@
 }
 
 .camp-payment-plan span {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(21, 55, 58, 0.78);
   font-size: 12px;
   line-height: 1.5;
 }
 
 .camp-payment-plan strong {
-  color: var(--camp-lime);
+  color: var(--camp-ink);
   font-size: 13px;
   text-align: right;
   white-space: nowrap;
@@ -818,7 +833,7 @@
 }
 
 .camp-parents {
-  background: #fffef9;
+  background: var(--camp-gradient-soft);
 }
 
 .camp-parent-list {
@@ -847,14 +862,15 @@
 }
 
 .camp-celebration {
-  background: var(--camp-forest);
+  background: var(--camp-gradient-primary);
   overflow: hidden;
   padding: 76px 0;
   position: relative;
 }
 
 .camp-celebration::after {
-  border: 1px solid rgba(200, 232, 146, 0.24);
+  border: 1px solid rgba(21, 55, 58, 0.22);
+  box-shadow: 0 0 0 26px rgba(255, 255, 255, 0.08), 0 0 0 52px rgba(21, 55, 58, 0.06);
   border-radius: 50%;
   content: "";
   height: 420px;
@@ -870,11 +886,11 @@
 }
 
 .camp-celebration .camp-section-kicker {
-  color: var(--camp-lime);
+  color: var(--camp-ink);
 }
 
 .camp-celebration h2 {
-  color: #ffffff;
+  color: var(--camp-ink);
   font-size: clamp(34px, 4.4vw, 52px);
   font-weight: 800;
   letter-spacing: -0.06em;
@@ -882,10 +898,15 @@
 }
 
 .camp-celebration p:not(.camp-section-kicker) {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(21, 55, 58, 0.84);
   line-height: 1.75;
   margin: 0;
   max-width: 700px;
+}
+
+.camp-celebration .camp-whatsapp-button {
+  background: linear-gradient(135deg, #fffef9, #fff0d7);
+  box-shadow: 0 10px 24px rgba(94, 44, 0, 0.22);
 }
 
 @media (max-width: 991px) {
@@ -1068,7 +1089,7 @@
 
   .camp-proof-grid > div {
     align-items: flex-start;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(21, 55, 58, 0.2);
     flex-direction: column;
     gap: 3px;
     min-height: 62px;
@@ -1182,12 +1203,12 @@
 .camp-page .footer {
   --default-color: var(--camp-ink);
   --heading-color: var(--camp-ink);
-  --accent-color: var(--camp-green);
+  --accent-color: var(--camp-yellow);
   --contrast-color: #ffffff;
-  background: linear-gradient(180deg, rgba(225, 243, 241, 0.78), rgba(240, 247, 247, 0.94));
+  background: linear-gradient(120deg, rgba(255, 225, 173, 0.94), rgba(255, 244, 225, 0.96) 68%, rgba(26, 168, 157, 0.16) 100%);
   -webkit-backdrop-filter: saturate(155%) blur(24px);
   backdrop-filter: saturate(155%) blur(24px);
-  border-top: 1px solid rgba(26, 168, 157, 0.14);
+  border-top: 1px solid rgba(249, 157, 27, 0.22);
   padding: 28px 0;
 }
 
