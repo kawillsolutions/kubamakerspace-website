@@ -1,0 +1,1318 @@
+.camp-page {
+  --camp-ink: #15373a;
+  --camp-forest: #0e5553;
+  --camp-green: #1aa89d;
+  --camp-green-ink: #126f69;
+  --camp-blue: #28ace2;
+  --camp-blue-ink: #126f93;
+  --camp-lime: #d7f1ed;
+  --camp-yellow: #f99d1b;
+  --camp-paper: #faf8f0;
+  --camp-muted: #5d7172;
+  --camp-line: #dce9e7;
+  --accent-color: var(--camp-green);
+  --nav-color: var(--camp-ink);
+  --nav-hover-color: var(--camp-green);
+  --nav-dropdown-color: var(--camp-ink);
+  --nav-dropdown-hover-color: var(--camp-green);
+  --nav-dropdown-background-color: #fffef9;
+  background: var(--camp-paper);
+  color: var(--camp-ink);
+}
+
+.camp-page .header {
+  --background-color: rgba(250, 248, 240, 0.96);
+  --default-color: var(--camp-ink);
+  --heading-color: var(--camp-ink);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  border-bottom: 1px solid rgba(21, 55, 58, 0.1);
+  box-shadow: 0 4px 24px rgba(21, 55, 58, 0.04);
+}
+
+.camp-page .header .logo h1 {
+  color: var(--camp-ink);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.camp-page .navmenu a,
+.camp-page .navmenu a:focus {
+  color: rgba(21, 55, 58, 0.72);
+  font-weight: 500;
+}
+
+.camp-page .navmenu a:hover,
+.camp-page .navmenu .active,
+.camp-page .navmenu .active:focus {
+  color: var(--camp-green);
+}
+
+.camp-page .header .cta-btn,
+.camp-page .header .cta-btn:focus {
+  background: var(--camp-forest);
+  border: 0;
+  border-radius: 999px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 24px;
+}
+
+.camp-page .header .cta-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.82;
+}
+
+.camp-page .section {
+  padding: 96px 0;
+}
+
+.camp-hero {
+  background: var(--camp-paper);
+  min-height: 0;
+  overflow: hidden;
+  padding: 132px 0 76px;
+  position: relative;
+}
+
+.camp-hero-grid {
+  align-items: center;
+  display: grid;
+  gap: clamp(40px, 6vw, 88px);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+}
+
+.camp-hero-content {
+  max-width: 650px;
+  position: relative;
+  z-index: 1;
+}
+
+.camp-eyebrow,
+.camp-section-kicker {
+  color: var(--camp-green-ink);
+  font-family: var(--nav-font);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.camp-hero .camp-eyebrow {
+  align-items: center;
+  display: flex;
+  color: var(--camp-green-ink);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.camp-hero .camp-eyebrow span {
+  background: var(--camp-yellow);
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.camp-hero h1 {
+  color: var(--camp-ink);
+  font-size: clamp(56px, 6.2vw, 82px);
+  font-weight: 800;
+  letter-spacing: -0.075em;
+  line-height: 0.98;
+  margin: 0;
+  max-width: 760px;
+}
+
+.camp-hero h1 em {
+  color: var(--camp-green);
+  font-style: normal;
+}
+
+.camp-hero h1 span {
+  background: var(--camp-yellow);
+  border-radius: 0.13em;
+  color: var(--camp-ink);
+  display: inline-block;
+  letter-spacing: -0.06em;
+  padding: 0 0.12em 0.04em;
+}
+
+.camp-hero .camp-tagline {
+  color: var(--camp-green);
+  font-family: var(--heading-font);
+  font-size: clamp(21px, 2.2vw, 27px);
+  font-weight: 700;
+  margin: 23px 0 12px;
+}
+
+.camp-hero-description {
+  color: var(--camp-muted);
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 590px;
+}
+
+.camp-hero-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin: 24px 0 28px;
+}
+
+.camp-hero-details span {
+  align-items: center;
+  color: var(--camp-ink);
+  display: inline-flex;
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 600;
+  gap: 8px;
+}
+
+.camp-hero-details i {
+  color: var(--camp-green);
+  font-size: 17px;
+}
+
+.camp-hero-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 24px;
+}
+
+.camp-whatsapp-button {
+  align-items: center;
+  background: var(--camp-yellow);
+  border: 0;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(249, 157, 27, 0.2);
+  color: var(--camp-ink);
+  display: inline-flex;
+  font-family: var(--nav-font);
+  font-size: 14px;
+  font-weight: 700;
+  gap: 10px;
+  justify-content: center;
+  padding: 15px 22px;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.camp-whatsapp-button:hover {
+  background: #ffda7c;
+  box-shadow: 0 12px 24px rgba(249, 157, 27, 0.24);
+  color: var(--camp-ink);
+  transform: translateY(-2px);
+}
+
+.camp-whatsapp-button:focus-visible,
+.camp-text-link:focus-visible {
+  outline: 3px solid var(--camp-blue);
+  outline-offset: 4px;
+}
+
+.camp-whatsapp-button i {
+  font-size: 18px;
+}
+
+.camp-text-link {
+  align-items: center;
+  color: var(--camp-green-ink);
+  display: inline-flex;
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 700;
+  gap: 7px;
+}
+
+.camp-text-link:hover {
+  color: var(--camp-ink);
+}
+
+.camp-hero-visual {
+  isolation: isolate;
+  padding: 0 28px 28px 8px;
+  position: relative;
+}
+
+.camp-hero-image-wrap {
+  aspect-ratio: 0.91;
+  border-radius: 48% 48% 28px 28px;
+  box-shadow: 0 24px 60px rgba(21, 55, 58, 0.16);
+  overflow: hidden;
+  position: relative;
+}
+
+.camp-hero-image {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+}
+
+.camp-image-label {
+  align-items: center;
+  background: rgba(250, 248, 240, 0.94);
+  border-radius: 999px;
+  bottom: 20px;
+  color: var(--camp-ink);
+  display: inline-flex;
+  font-family: var(--nav-font);
+  font-size: 12px;
+  font-weight: 600;
+  gap: 8px;
+  left: 20px;
+  padding: 10px 14px;
+  position: absolute;
+}
+
+.camp-image-label i {
+  color: var(--camp-green);
+  font-size: 16px;
+}
+
+.camp-hero-stamp {
+  align-items: center;
+  background: var(--camp-lime);
+  border: 8px solid var(--camp-paper);
+  border-radius: 50%;
+  color: var(--camp-ink);
+  display: flex;
+  height: 132px;
+  justify-content: center;
+  left: -34px;
+  position: absolute;
+  text-align: center;
+  top: 13%;
+  transform: rotate(-9deg);
+  width: 132px;
+}
+
+.camp-hero-stamp span {
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 1;
+}
+
+.camp-hero-stamp small {
+  font-family: var(--nav-font);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-left: 5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.camp-hero-doodle {
+  align-items: center;
+  background: var(--camp-blue);
+  border-radius: 50%;
+  color: var(--camp-ink);
+  display: flex;
+  font-size: 30px;
+  height: 66px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  transform: rotate(12deg);
+  width: 66px;
+  z-index: 2;
+}
+
+.camp-proof-strip {
+  background: var(--camp-forest);
+  color: #ffffff;
+  padding: 25px 0;
+}
+
+.camp-proof-grid {
+  align-items: center;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.camp-proof-grid > div {
+  align-items: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  gap: 12px;
+  min-height: 48px;
+  padding: 0 18px;
+}
+
+.camp-proof-grid > div:first-child {
+  padding-left: 0;
+}
+
+.camp-proof-grid > div:last-child {
+  border: 0;
+  padding-right: 0;
+}
+
+.camp-proof-grid strong {
+  color: var(--camp-lime);
+  font-family: var(--heading-font);
+  font-size: clamp(20px, 2.2vw, 27px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
+.camp-proof-grid > div:nth-child(even) strong {
+  color: var(--camp-blue);
+}
+
+.camp-proof-grid span {
+  color: rgba(255, 255, 255, 0.82);
+  font-family: var(--nav-font);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.camp-about {
+  background: #fffef9;
+}
+
+.camp-about .camp-section-kicker,
+.camp-activities .camp-section-kicker,
+.camp-schedule .camp-section-kicker,
+.camp-parents .camp-section-kicker {
+  margin-bottom: 16px;
+}
+
+.camp-about h2,
+.camp-activities h2,
+.camp-schedule h2,
+.camp-parents h2 {
+  color: var(--camp-ink);
+  font-size: clamp(34px, 4vw, 50px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.07;
+  margin: 0;
+}
+
+.camp-about .camp-about-lead {
+  color: var(--camp-green-ink);
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.camp-about p:not(.camp-about-lead) {
+  color: var(--camp-muted);
+  line-height: 1.8;
+}
+
+.camp-section-heading {
+  align-items: end;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin: 0 0 42px;
+}
+
+.camp-section-heading h2 {
+  color: var(--camp-ink);
+  font-size: clamp(38px, 5vw, 60px);
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  line-height: 0.99;
+  margin: 0;
+}
+
+.camp-section-heading h2 em {
+  color: var(--camp-green);
+  font-style: normal;
+}
+
+.camp-section-heading > p {
+  color: var(--camp-muted);
+  line-height: 1.75;
+  margin: 0 0 4px;
+  max-width: 420px;
+}
+
+.camp-programmes {
+  background: var(--camp-paper);
+}
+
+.camp-program-card {
+  background: #fffef9;
+  border: 1px solid rgba(21, 55, 58, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(21, 55, 58, 0.045);
+  overflow: hidden;
+  padding: 10px 10px 22px;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.camp-program-card:hover {
+  box-shadow: 0 18px 40px rgba(21, 55, 58, 0.12);
+  transform: translateY(-5px);
+}
+
+.camp-program-art {
+  align-items: center;
+  background-color: var(--art-bg);
+  border-radius: 12px;
+  display: flex;
+  height: 142px;
+  justify-content: center;
+  margin-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.camp-program-art::before,
+.camp-program-art::after {
+  border: 1px solid color-mix(in srgb, var(--art-ink), transparent 78%);
+  border-radius: 50%;
+  content: "";
+  height: 148px;
+  position: absolute;
+  right: -25px;
+  top: -54px;
+  width: 148px;
+}
+
+.camp-program-art::after {
+  height: 94px;
+  right: auto;
+  top: auto;
+  bottom: -50px;
+  left: -22px;
+  width: 94px;
+}
+
+.camp-program-art > span {
+  color: color-mix(in srgb, var(--art-ink), transparent 72%);
+  font-family: var(--nav-font);
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  position: absolute;
+  right: 13px;
+  top: 14px;
+}
+
+.camp-program-art i {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(21, 55, 58, 0.08);
+  color: var(--art-ink);
+  display: flex;
+  font-size: 42px;
+  height: 82px;
+  justify-content: center;
+  position: relative;
+  width: 82px;
+  z-index: 1;
+}
+
+.camp-art-makers { --art-bg: #fff0dd; --art-ink: #b76a0f; }
+.camp-art-robotics { --art-bg: #dff4f2; --art-ink: #147b73; }
+.camp-art-software { --art-bg: #dff4fb; --art-ink: var(--camp-blue-ink); }
+.camp-art-baking { --art-bg: #fff0dd; --art-ink: #b76a0f; }
+.camp-art-fashion { --art-bg: #e6f7fb; --art-ink: var(--camp-blue-ink); }
+.camp-art-welding { --art-bg: #dff4fb; --art-ink: var(--camp-blue-ink); }
+.camp-art-craft { --art-bg: #fff0dd; --art-ink: #b76a0f; }
+.camp-art-music { --art-bg: #dff4fb; --art-ink: var(--camp-blue-ink); }
+.camp-art-farming { --art-bg: #dff4f2; --art-ink: #147b73; }
+.camp-art-film { --art-bg: #dff4fb; --art-ink: var(--camp-blue-ink); }
+
+.camp-program-meta {
+  align-items: center;
+  color: var(--camp-muted);
+  display: flex;
+  font-family: var(--nav-font);
+  font-size: 10px;
+  font-weight: 700;
+  justify-content: space-between;
+  letter-spacing: 0.1em;
+  margin: 0 10px 12px;
+}
+
+.camp-age {
+  background: #edf3e6;
+  border-radius: 999px;
+  color: var(--camp-forest);
+  font-size: 10px;
+  letter-spacing: 0;
+  padding: 5px 9px;
+  white-space: nowrap;
+}
+
+.camp-program-card h3 {
+  color: var(--camp-ink);
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+  margin: 0 10px 8px;
+}
+
+.camp-program-card p {
+  color: var(--camp-muted);
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 0 10px;
+}
+
+.camp-activities {
+  background: #f0eddf;
+}
+
+.camp-activities h2,
+.camp-schedule h2,
+.camp-parents h2 {
+  margin-bottom: 18px;
+}
+
+.camp-activities .col-lg-5 > p:last-child,
+.camp-schedule .col-lg-5 > p:last-child,
+.camp-parents .col-lg-4 > p:last-child {
+  color: var(--camp-muted);
+  line-height: 1.8;
+}
+
+.camp-activity-list {
+  display: grid;
+  gap: 11px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.camp-activity-list span {
+  align-items: center;
+  background: rgba(255, 254, 249, 0.78);
+  border: 1px solid rgba(21, 55, 58, 0.08);
+  border-radius: 12px;
+  color: var(--camp-ink);
+  display: inline-flex;
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 600;
+  gap: 10px;
+  min-height: 54px;
+  padding: 12px 15px;
+}
+
+.camp-activity-list i {
+  color: var(--camp-green);
+  font-size: 18px;
+}
+
+.camp-journey {
+  background: var(--camp-forest);
+  color: #ffffff;
+}
+
+.camp-journey .section-title {
+  padding-bottom: 40px;
+}
+
+.camp-journey .section-title h2 {
+  color: #ffffff;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 800;
+  letter-spacing: -0.07em;
+}
+
+.camp-journey .section-title > p:last-child {
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 560px;
+}
+
+.camp-journey .camp-section-kicker {
+  color: var(--camp-lime);
+}
+
+.camp-week-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  border-top: 0;
+  height: 100%;
+  min-height: 210px;
+  padding: 24px;
+  position: relative;
+}
+
+.camp-week-card > span {
+  color: var(--camp-lime);
+  display: inline-block;
+  font-family: var(--nav-font);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 30px;
+}
+
+.camp-week-card h3 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 8px;
+}
+
+.camp-week-card p {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.camp-schedule {
+  background: #fffef9;
+}
+
+.camp-schedule-table {
+  --bs-table-bg: transparent;
+  background: var(--camp-paper);
+  border: 1px solid var(--camp-line);
+  border-radius: 18px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.camp-schedule-table th,
+.camp-schedule-table td {
+  border-bottom: 1px solid var(--camp-line);
+  padding: 17px 20px;
+  vertical-align: middle;
+}
+
+.camp-schedule-table tr:last-child th,
+.camp-schedule-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.camp-schedule-table th {
+  color: var(--camp-green);
+  font-family: var(--nav-font);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  width: 138px;
+}
+
+.camp-schedule-table td {
+  color: var(--camp-ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.camp-registration {
+  background: #f0eddf;
+}
+
+.camp-fee-card {
+  background: var(--camp-forest);
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(21, 55, 58, 0.14);
+  color: #ffffff;
+  height: 100%;
+  padding: 34px;
+}
+
+.camp-fee-card .camp-section-kicker {
+  color: var(--camp-lime);
+}
+
+.camp-fee-card h2 {
+  color: #ffffff;
+  font-size: clamp(40px, 4.4vw, 56px);
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  margin: 12px 0 0;
+}
+
+.camp-fee-card > p:not(.camp-section-kicker) {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+}
+
+.camp-payment-plan {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: grid;
+  gap: 8px 12px;
+  grid-template-columns: 1fr auto;
+  margin: 24px 0;
+  padding: 18px 0;
+}
+
+.camp-payment-plan span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.camp-payment-plan strong {
+  color: var(--camp-lime);
+  font-size: 13px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.camp-fee-card .camp-whatsapp-button {
+  width: 100%;
+}
+
+.camp-includes {
+  background: #fffef9;
+  border: 1px solid rgba(21, 55, 58, 0.08);
+  border-radius: 20px;
+  height: 100%;
+  padding: 34px;
+}
+
+.camp-includes .camp-section-kicker {
+  margin-bottom: 12px;
+}
+
+.camp-includes h2 {
+  color: var(--camp-ink);
+  font-size: 29px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+}
+
+.camp-includes ul,
+.camp-parent-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.camp-includes li {
+  align-items: center;
+  border-bottom: 1px solid var(--camp-line);
+  color: var(--camp-ink);
+  display: flex;
+  font-size: 14px;
+  gap: 12px;
+  padding: 14px 0;
+}
+
+.camp-includes li:last-child {
+  border-bottom: 0;
+}
+
+.camp-includes li i {
+  color: var(--camp-green);
+  font-size: 18px;
+}
+
+.camp-parents {
+  background: #fffef9;
+}
+
+.camp-parent-list {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.camp-parent-list li {
+  align-items: flex-start;
+  background: var(--camp-paper);
+  border: 1px solid var(--camp-line);
+  border-radius: 14px;
+  color: var(--camp-ink);
+  display: flex;
+  gap: 12px;
+  line-height: 1.6;
+  padding: 18px;
+}
+
+.camp-parent-list li i {
+  color: var(--camp-green);
+  flex: 0 0 auto;
+  font-size: 19px;
+  margin-top: 1px;
+}
+
+.camp-celebration {
+  background: var(--camp-forest);
+  overflow: hidden;
+  padding: 76px 0;
+  position: relative;
+}
+
+.camp-celebration::after {
+  border: 1px solid rgba(200, 232, 146, 0.24);
+  border-radius: 50%;
+  content: "";
+  height: 420px;
+  position: absolute;
+  right: -140px;
+  top: -240px;
+  width: 420px;
+}
+
+.camp-celebration .container {
+  position: relative;
+  z-index: 1;
+}
+
+.camp-celebration .camp-section-kicker {
+  color: var(--camp-lime);
+}
+
+.camp-celebration h2 {
+  color: #ffffff;
+  font-size: clamp(34px, 4.4vw, 52px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.camp-celebration p:not(.camp-section-kicker) {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.75;
+  margin: 0;
+  max-width: 700px;
+}
+
+@media (max-width: 991px) {
+  .camp-page .section {
+    padding: 76px 0;
+  }
+
+  .camp-hero {
+    padding-top: 122px;
+  }
+
+  .camp-hero-grid {
+    gap: 50px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  }
+
+  .camp-hero h1 {
+    font-size: clamp(52px, 7vw, 68px);
+  }
+
+  .camp-hero-details {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .camp-hero-stamp {
+    height: 110px;
+    left: -24px;
+    width: 110px;
+  }
+
+  .camp-hero-stamp span {
+    font-size: 42px;
+  }
+
+  .camp-proof-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .camp-proof-grid > div:nth-child(2) {
+    border: 0;
+  }
+
+  .camp-proof-grid > div:nth-child(3) {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .camp-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .camp-hero-content {
+    max-width: 620px;
+  }
+
+  .camp-hero-visual {
+    margin: 8px auto 0;
+    max-width: 520px;
+    width: 100%;
+  }
+
+  .camp-hero-image-wrap {
+    aspect-ratio: 1.1;
+    border-radius: 44% 44% 24px 24px;
+  }
+
+  .camp-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .camp-section-heading > p {
+    max-width: 600px;
+  }
+
+  .camp-activity-list {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .camp-page .section {
+    padding: 64px 0;
+  }
+
+  .camp-page .header .logo h1 {
+    font-size: 21px;
+  }
+
+  .camp-page .header .cta-btn,
+  .camp-page .header .cta-btn:focus {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  .camp-hero {
+    padding: 112px 0 48px;
+  }
+
+  .camp-hero-grid {
+    gap: 35px;
+  }
+
+  .camp-hero h1 {
+    font-size: clamp(45px, 12vw, 58px);
+  }
+
+  .camp-hero .camp-eyebrow {
+    font-size: 10px;
+    margin-bottom: 19px;
+  }
+
+  .camp-hero .camp-tagline {
+    font-size: 21px;
+    margin-top: 19px;
+  }
+
+  .camp-hero-description {
+    font-size: 15px;
+  }
+
+  .camp-hero-details {
+    margin: 20px 0 23px;
+  }
+
+  .camp-hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .camp-hero-visual {
+    padding: 0 16px 16px 8px;
+  }
+
+  .camp-hero-image-wrap {
+    aspect-ratio: 0.98;
+  }
+
+  .camp-hero-stamp {
+    border-width: 6px;
+    height: 94px;
+    left: -10px;
+    top: 12%;
+    width: 94px;
+  }
+
+  .camp-hero-stamp span {
+    font-size: 36px;
+  }
+
+  .camp-hero-stamp small {
+    font-size: 9px;
+  }
+
+  .camp-hero-doodle {
+    height: 52px;
+    right: -2px;
+    width: 52px;
+  }
+
+  .camp-image-label {
+    bottom: 12px;
+    font-size: 10px;
+    left: 12px;
+    padding: 8px 11px;
+  }
+
+  .camp-proof-strip {
+    padding: 18px 0;
+  }
+
+  .camp-proof-grid {
+    gap: 12px 0;
+  }
+
+  .camp-proof-grid > div {
+    align-items: flex-start;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    gap: 3px;
+    min-height: 62px;
+    padding: 4px 12px;
+  }
+
+  .camp-proof-grid > div:nth-child(2) {
+    border: 0;
+    padding-right: 0;
+  }
+
+  .camp-proof-grid > div:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .camp-proof-grid strong {
+    font-size: 20px;
+  }
+
+  .camp-proof-grid span {
+    font-size: 10px;
+  }
+
+  .camp-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .camp-section-heading h2 {
+    font-size: 42px;
+  }
+
+  .camp-program-art {
+    height: 150px;
+  }
+
+  .camp-activity-list {
+    grid-template-columns: 1fr;
+  }
+
+  .camp-week-card {
+    min-height: 185px;
+  }
+
+  .camp-schedule-table th,
+  .camp-schedule-table td {
+    padding: 14px 12px;
+  }
+
+  .camp-schedule-table th {
+    font-size: 11px;
+    width: 100px;
+  }
+
+  .camp-schedule-table td {
+    font-size: 13px;
+  }
+
+  .camp-fee-card,
+  .camp-includes {
+    padding: 25px;
+  }
+
+  .camp-parent-list {
+    grid-template-columns: 1fr;
+  }
+
+  .camp-celebration {
+    padding: 58px 0;
+  }
+
+  .camp-celebration .camp-whatsapp-button {
+    margin-top: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .camp-program-card,
+  .camp-whatsapp-button {
+    transition: none;
+  }
+}
+
+.camp-page .header {
+  --background-color: transparent;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.camp-page .header > .container {
+  width: calc(100% - 32px);
+  max-width: 1240px;
+  margin: 14px auto 0;
+  padding: 10px 20px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.64));
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  backdrop-filter: saturate(180%) blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.86);
+  border-radius: 999px;
+  box-shadow: 0 12px 36px rgba(21, 55, 58, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  pointer-events: auto;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.camp-page.scrolled .header > .container {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 40px rgba(21, 55, 58, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.camp-page .footer {
+  --default-color: var(--camp-ink);
+  --heading-color: var(--camp-ink);
+  --accent-color: var(--camp-green);
+  --contrast-color: #ffffff;
+  background: linear-gradient(180deg, rgba(225, 243, 241, 0.78), rgba(240, 247, 247, 0.94));
+  -webkit-backdrop-filter: saturate(155%) blur(24px);
+  backdrop-filter: saturate(155%) blur(24px);
+  border-top: 1px solid rgba(26, 168, 157, 0.14);
+  padding: 28px 0;
+}
+
+.camp-page .footer > .container {
+  width: calc(100% - 32px);
+  max-width: 1220px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px 28px;
+  padding: 25px 32px 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(250, 253, 253, 0.7));
+  -webkit-backdrop-filter: saturate(175%) blur(26px);
+  backdrop-filter: saturate(175%) blur(26px);
+  border: 1px solid rgba(255, 255, 255, 0.94);
+  border-radius: 24px;
+  box-shadow: 0 12px 36px rgba(21, 55, 58, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.96);
+}
+
+.camp-page .footer h3 {
+  color: var(--camp-ink);
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  margin: 0;
+  text-align: left;
+}
+
+.camp-page .footer p {
+  color: rgba(21, 55, 58, 0.72);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 580px;
+  text-align: left;
+}
+
+.camp-page .footer > .container > .container {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.camp-page .footer .copyright {
+  border-top-color: rgba(21, 55, 58, 0.13);
+  color: rgba(21, 55, 58, 0.68);
+  font-size: 12px;
+  padding-top: 14px;
+  text-align: left;
+}
+
+.camp-page .footer .copyright .sitename {
+  color: var(--camp-ink);
+}
+
+@media (max-width: 575px) {
+  .camp-page .footer {
+    padding: 20px 0;
+  }
+
+  .camp-page .footer > .container {
+    width: calc(100% - 24px);
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 22px 20px 18px;
+    border-radius: 20px;
+  }
+
+  .camp-page .footer h3 {
+    font-size: 21px;
+  }
+
+  .camp-page .footer > .container > .container {
+    margin-top: 8px;
+  }
+
+  .camp-page .footer .copyright {
+    text-align: left;
+  }
+}
+
+@media (max-width: 1199px) {
+  .camp-page.mobile-nav-active .header,
+  .camp-page.mobile-nav-active .header > .container {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .camp-page.mobile-nav-active .navmenu > ul {
+    top: 72px;
+    right: 14px;
+    bottom: auto;
+    left: 14px;
+    max-height: calc(100vh - 100px);
+    background: rgba(255, 255, 255, 0.88);
+    -webkit-backdrop-filter: saturate(180%) blur(24px);
+    backdrop-filter: saturate(180%) blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    border-radius: 24px;
+    box-shadow: 0 18px 48px rgba(21, 55, 58, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  }
+}
+
+@media (max-width: 575px) {
+  .camp-page .header > .container {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 8px 11px;
+    border-radius: 22px;
+  }
+
+  .camp-page .header .logo h1 {
+    font-size: clamp(17px, 5vw, 21px);
+  }
+
+  .camp-page .header .cta-btn,
+  .camp-page .header .cta-btn:focus {
+    font-size: 12px;
+    margin-right: 4px;
+    padding: 8px 12px;
+  }
+
+  .camp-page .mobile-nav-toggle {
+    margin-right: 0;
+  }
+}
