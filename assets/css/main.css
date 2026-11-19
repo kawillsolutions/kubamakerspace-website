@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #282828; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #009961; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #fa9d1c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #009961; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #fa9d1c; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #009961; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #fa9d1c; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -240,6 +240,15 @@ h6 {
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
+}
+
+.header .logo .brand-logo {
+  width: 140px;
+  height: 44px;
+  max-height: 44px;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .header .logo h1 {
@@ -579,6 +588,16 @@ h6 {
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
+}
+
+.footer .footer-brand-logo {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: 72px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  object-position: left center;
 }
 
 .footer p {
@@ -1375,32 +1394,32 @@ section,
 }
 
 .camp-fee-card {
-  background: linear-gradient(145deg, #07523b, #009961);
+  background: #fa9d1c;
   border-radius: 16px;
-  box-shadow: 0 14px 34px rgba(10, 55, 37, 0.16);
-  color: #ffffff;
+  box-shadow: 0 14px 34px rgba(21, 55, 58, 0.14);
+  color: #15373a;
   padding: 32px;
 }
 
 .camp-fee-card .camp-section-kicker,
 .camp-celebration .camp-section-kicker {
-  color: #b7e4c7;
+  color: #15373a;
 }
 
 .camp-fee-card h2 {
-  color: #ffffff;
+  color: #15373a;
   font-size: clamp(34px, 4vw, 48px);
   font-weight: 800;
   margin: 8px 0 4px;
 }
 
 .camp-fee-card > p:not(.camp-section-kicker) {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(21, 55, 58, 0.82);
 }
 
 .camp-payment-plan {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(21, 55, 58, 0.2);
+  border-top: 1px solid rgba(21, 55, 58, 0.2);
   display: grid;
   gap: 8px 12px;
   grid-template-columns: 1fr auto;
@@ -1409,12 +1428,12 @@ section,
 }
 
 .camp-payment-plan span {
-  color: rgba(255, 255, 255, 0.86);
+  color: rgba(21, 55, 58, 0.82);
   font-size: 13px;
 }
 
 .camp-payment-plan strong {
-  color: #ffffff;
+  color: #15373a;
   font-size: 14px;
   text-align: right;
 }
@@ -1485,18 +1504,18 @@ section,
 }
 
 .camp-celebration {
-  background: linear-gradient(120deg, #062c20, #08764b);
+  background: #fa9d1c;
   padding: 70px 0;
 }
 
 .camp-celebration h2 {
-  color: #ffffff;
+  color: #15373a;
   font-size: clamp(30px, 4vw, 42px);
   font-weight: 700;
 }
 
 .camp-celebration p:not(.camp-section-kicker) {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(21, 55, 58, 0.82);
   line-height: 1.7;
   margin-bottom: 0;
 }
@@ -1561,12 +1580,16 @@ section,
   align-items: center;
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  height: 150px;
   overflow: hidden;
 }
 
 .clients .client-logo img {
-  padding: 50px;
-  max-width: 80%;
+  width: 100%;
+  height: 100%;
+  padding: 18px;
+  max-width: 100%;
+  object-fit: contain;
   transition: 0.3s;
 }
 
